@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>設定資料wiki</title>
+<link rel="stylesheet" href="style.css?v=6cfeca0811">
+</head>
+<body>
+<div class="container-wrapper">
+  <header id="header">
+    <button id="menu-toggle" type="button" hidden>メニュー</button>
+    <a id="site-title" href="#/">設定資料wiki</a>
+    <form id="search" hidden autocomplete="off">
+      <input id="search-input" type="search" placeholder="wiki 内を検索" aria-label="wiki 内を検索">
+    </form>
+  </header>
+  <div id="columns">
+    <nav id="menubar" hidden></nav>
+    <main id="body">
+      <form id="lock" hidden>
+        <h1>パスワード</h1>
+        <p>この wiki は閲覧用のパスワードで暗号化しています。</p>
+        <p><input id="lock-input" type="password" autocomplete="current-password" aria-label="パスワード">
+        <button type="submit">開く</button></p>
+        <p><label><input id="lock-remember" type="checkbox" checked> このブラウザで覚える</label></p>
+        <p id="lock-error" class="error" hidden></p>
+      </form>
+      <div id="view"></div>
+    </main>
+  </div>
+  <footer id="footer"></footer>
+</div>
+<script type="module" src="app.js?v=6cfeca0811"></script>
+</body>
+</html>
